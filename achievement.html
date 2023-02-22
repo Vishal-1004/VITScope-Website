@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="achievementDesign.css">
+    <title>Serious This time</title>
+    <link rel="stylesheet" type="text/css" href="demoTimeline.css" />
+	<link rel="stylesheet" type="text/css" href="styleTimeline.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+	<script>
+    jQuery(document).ready(function($){
+        var $timeline_block = $('.cd-timeline-block');
+    
+        //hide timeline blocks which are outside the viewport
+        $timeline_block.each(function(){
+            if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+                $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+            }
+        });
+    
+        //on scolling, show/animate timeline blocks when enter the viewport
+        $(window).on('scroll', function(){
+            $timeline_block.each(function(){
+                if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+                    $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+                }
+            });
+        });
+    });
+     </script>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-chevrons-up'></i></button>
+    <header>
+        <section class="site-navbar">
+            <div class="site-logo">
+                <a href="index.html">VIT<span class="yellow">Scope</span><span class="dot">.</span></a>
+            </div>
+            <div class="site-quickContact">
+                <div class="address">
+                    <span><i class='bx bxs-map'></i></span>
+                    <span>
+                        Vandalur- Kelambakkam road,
+                        <br>
+                        Chennai-600127, Tamil Nadu, India
+                    </span>
+                </div>
+                <div class="call">
+                    <span><i class='bx bxs-contact'></i></span>
+                    <span>
+                        Ph : 044 3993 1555
+                        <br>
+                        Fax : 044 3993 2555
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="topnav" id="myTopnav">
+            <div class="onePart">
+                <a href="index.html">Home</a>
+                <a href="achievement.html" class="active">Achievements</a>
+                <a href="placement.html">Placements</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="secondPart">
+                <a href="https://in.linkedin.com/school/vellore-institute-of-technology" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/vituniversity" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://twitter.com/vit" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </section>
+
+        <!-- The overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="achievement.html" class="active">Achievements</a>
+                <a href="placement.html">Placements</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="lastPart">
+            <section class="container-forAnimtext">
+        
+                <div class="text-box">
+                    <h1>SCOPE</h1>
+                    <h1>A TALENT HUB</h1>
+                </div>
+        
+                <div class="autoType">
+                    <h1>We are <span class="auto-type"></span></h1>
+                </div>
+                
+                <div class="buttons">
+                    <button class="btn"><span></span><a href="https://chennai.vit.ac.in" target="_blank" data-start="good luck!" data-text="about VIT" data-title="more"></a></button>
+                 </div>
+            </section>
+            <section class="image">
+                <img src="Images/Screenshot__231_-removebg-preview.png" alt="student">
+            </section>
+        </div>
+    </header>
+
+    <section class="achievementsNew">
+        <div class="successImage reveal">
+            <img src="Images/people.jpg">
+        </div>
+        <div class="newMove">
+            <div class="achievementText reveal">
+                <h2>Achievements</h2>
+                <h1>We always try to
+                    <br>
+                    Outperform ourself
+                </h1>
+                <p>From the very start itself VIT has shown its interest in lot of inter and intra college activities which includes both technical and non-technical acttivities. These events where even further categorised as inter or intra college events.</p>
+                <p>VIT provides oppurtunities for students to grow and outshine. For this reasons VIT regularly organises a Cultural and Technical Fest every year within the college. Thus it won't be wrong to say that any student passing out from VIT is capable enough to perform well in both academic as well as non academic activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievementCategory">
+        <div class="achievementHeading">
+            <h1>Achievements Category</h1>
+        </div>
+        <div class="topicsParticipated reveal">
+            <div class="ideathon">
+                <i class='bx bx-bulb'></i>
+                <h1>Ideathons</h1>
+            </div>
+            <div class="hackathon">
+                <i class='bx bx-code-alt' ></i>
+                <h1>Hackathons</h1>
+            </div>
+            <div class="sports">
+                <i class='bx bx-cricket-ball' ></i>
+                <h1>Sports</h1>
+            </div>
+            <div class="research">
+                <i class='bx bx-book-bookmark' ></i>
+                <h1>Research</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="studentAchivement">
+        <div class="headingStudent">
+            <h1>Achievements Of Student</h1>
+        </div>
+    </section>
+    <div class="rt-container">
+        <div class="col-rt-12">
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>App Frenzy 2.0 National-level Hackathon</h3>
+                        <p>Students: Aadhithya D (21BPS1236), Adithya S (21BPS1223), Sanjaii V (21BRS1021), Thiruvikraman A (21BRS1013)</p>
+                        <p>Position: 3rd Place</p>
+                        <p>Discription:</p>
+                        <p> our student team 'Dev Daredevils' School of Computer Science and Engineering, VIT Chennai for securing Third place in the App Frenzy 2.0 National-level Hackathon, organized by Sri Sairam Engineering College with the objective of developing mobile applications that are innovative and useful in real life. Team won against 100+ competing teams, in which they developed a mobile app "FITNUT". The app uses Google ML kit's pose detection algorithm and the team created a model to detect workouts and count reps. Based on that, a score will be assigned. They have also implemented a leader board which displays the scores to encourage competition.
+                        </p>
+                        <span class="cd-date">4 February 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/flamenco-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Bharat Nritya Utsav 2023</h3>
+                        <p>Students: Habinaya Varthini KA (20BFT1012)</p>
+                        <p>Description:</p>
+                        <p>Happy to share that our student Ms Habinaya Varthini KA, 20BFT1012, has participated in the Bharat Nritya Utsav 2023 conducted by the famous banner Sri Parthasarathy Swami Sabha of Dr. Nalli Kuppusami. She was awarded "Dedication towards dance -2019" by Dr. Nalli Kuppusami. Her performance has been appreciated and published in the Trinity Mirror newspaper pg no 6 dated 31/1/2023.</p>
+                        <span class="cd-date">31 January 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>International Space Science Challenge 2022</h3>
+                        <p>Students: Ashna Verma (20BEC1083), Rohan Murali (21BMH1214), Kalyani Patra (21BRS1229), Hemanth Vasu (21BEE1037), Jesher Joshua M (21BAI1925), Jeshma Ullas (21BCE6197)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Our team 'Quarky Quasars' has achieved the position of 'Winner' in the Space Robotics Category in the International Space Science Challenge 2022, organized by Spaceonova. he team won against 100+ competing teams with the proposed idea of 'Asteroid mining bots', which suggested ways to exploit asteroids that are filled with potential minerals that can be beneficial for earthlings in order to solve the problem of lack of resources. The project includes planning and designing the technical aspects of Mining Bots using prototyping software.</p>
+                        <span class="cd-date">3 February 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/speech-3-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>District level Speech Competition</h3>
+                        <p>Students: Joshua Samuel (19BLB1026)</p>
+                        <p>Description:</p>
+                        <p>	The competition was conducted by the Tamil Nadu State Judicial Academy between all the Law Colleges in the District of Kancheepuram and he represented our institution and received the First Runner Up award from the Kancheepuram District Judge. The theme of the competition was 'Empowering the Future - Protection of Children's Rights'.</p>
+                        <span class="cd-date">2 February 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/car-sports-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>MRF MMSC FMSCI Indian National Car Racing Championship</h3>
+                        <p>Students: Sai Sanjay T (20BMH1057)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <span class="cd-date">2 February 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/car-sports-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Formula Bharat 2023</h3>
+                        <p>Team: Team Shaurya Racing</p>
+                        <p>Description:</p>
+                        <p>This is to inform you that Team Shaurya Racing participated in the Indian Formula Student competition Formula Bharat 2023 held at Kari Motor Speedway, Coimbatore.</p>
+                        <p>Formula Bharat 2023 is a national-level FSAE event where teams across the country participate to compete with a life-size formula-style vehicle in its engineering design, overall cost and manufacturing, business pitch and marketability, and dynamic performance. The competition is divided into 2 categories - Statics and Dynamics.</p><p>I am pleased to share with you that we have secured an Overall rank of 9 out of 49 registered teams, and an Overall rank of 6 in Statics while also securing 6th place in Engineering Design and 8th place in Cost and Manufacturing. </p>
+                        <span class="cd-date">30 January 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/karate-fighter-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Karate Championship</h3>
+                        <p>Students: Chaturvedi. R.R (19BME1093</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Happy to share that our student Mr. CHATURVEDI. R.R - 19BME1093 won the GOLD Medal in International Karate Championship held at Sairam Engineering College</p>
+                        <span class="cd-date">8 January 2023</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Cyber Hackathon</h3>
+                        <p>Students: Shiva Gurunath, Kuralamuthan B</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>The team of SCOPE faculty and students Dr. Vallidevi k(Associate Professor) SCOPE, Shiva Gurunath(20BPS1028) and Kuralamuthan B(20BPS1082) won the 1st Place in the finals and awarded the gifts and trophy by Mr. Shankar Jiwal(Chennai Police Commissoner)</p>
+                        <span class="cd-date">26 Dec 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/speech-3-svgrepo-com.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Internet 2.0 - Outstanding Leadership Award in the field of Technology </h3>
+                        <p>Students: Anirudh Vasudev (19MIA1100)</p>
+                        <p>Description:</p>
+                        <p>Our student 19MIA 1100 Anirudh Vasudev has won the Outstanding Leadership Award in the field of Technology at Internet 2.0 Conference held at the Intercontinental Hotel Dubai Festival City, Dubai.</p>
+                        <span class="cd-date">17 December 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Lumos Metaverse's Build for Web3 Hackathon</h3>
+                        <p>Students: Gautham Krishna (21BRS1032), Sabari Ganesh (21BPS1209)</p>
+                        <p>Description:</p>
+                        <p>Our team “Green Genesis participated in “Lumos Metaverse's Build for Web3 Hackathon” which had around 7700+ developers across the world with all proficiency and 14 winning tracks by sponsors !! Our students' team won Pool Prize in Polygon Track.
+                        <span class="cd-date">20 November 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Best Outgoing Student Award</h3>
+                        <p>Students: Jayit Saha (18BCE1071)</p>
+                        <p>Description:</p>
+                        <p>Jayit Saha(18BCE1071) was facilitated with the Best Outgoing Student Award for the year 2021-22.</p>
+                        <span class="cd-date">November 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Optum Stratethon Season 4 - APAC Hackathon Winners</h3>
+                        <p>Students: Joyeeta Dey (19BCE1243), Apoorv Singh Chauhan (19BCE1055)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p> Team “BYTEMAGIC” - Winners of E-Track were awarded prize money of $6700</p>
+                        <span class="cd-date">18 November 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/football.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>IIT Madras Sports Fest</h3>
+                        <p>Students: Srinidhi (21BAI1479), Vandhana S (21BPS1172), Hannah Gracelyn (21BCE1078)</p>
+                        <p>Positon: 3rd Place</p>
+                        <p>Description:</p>
+                        <p>Srinidhi won the third prize in the women's 800-metre category while the women's relay team, consisting of Hannah, Vandhana, and Srinithi also bagged the third position.</p>
+                        <span class="cd-date">October 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/football.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>IIT Madras Sports Fest</h3>
+                        <p>Students: Srinidhi Arun Kumar (21BPS1354), Asmi Agnihotri (21BCE1404)</p>
+                        <p>Positon: Runners Up</p>
+                        <p>Description:</p>
+                        <p>Srinidhi Arun Kumar and Asmi Agnihotri won the silver medal in women's table tennis.</p>
+                        <span class="cd-date">October 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/football.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>IIT Madras Sports Fest (Football Team)</h3>
+                        <p>Students: Yash Aryaman (20BCE1877), Suprav Bhattacharya (19BCE1130), C Lanston Davis (20BCE1613),Dhananjay S (21BRS1580), Dawn S Chacko (21BRS1446), Tanishq Mahapatra (21BAI1002), Aditya Choudhary (21BAI1566), Yakesh S (21BAI1692), Pranav Jayaraj (21BRS1190)</p>
+                        <p>Positon: 3rd Place</p>
+                        <span class="cd-date">October 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Asian International Youth United Nations Conference</h3>
+                        <p>Students: Puvanesh Y (22MIA1180)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Puvanesh Y A bagged the first prize in the Asian International Youth UnitedNations Conference which was held at Kuala Lumpur, Malaysia from 29th September 2022 to 4th October 2022.</p>
+                        <span class="cd-date">September 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/football.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3> State level Bench Press Championship</h3>
+                        <p>Students: Isha Gupta (21BCE5557)</p>
+                        <p>Positon: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Isha Gupta won gold medals in the junior and senior under 84kg categories in the District Level Powerlifting championship and the State level Bench Press Championship.</p>
+                        <span class="cd-date">September 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>HackWithInfy 2022</h3>
+                        <p>Students: Kashvi Ankitbhai Sheth (21BCE5329)</p>
+                        <p>Description:</p>
+                        <p>Kashvi Ankibhai Sheth has been selected as the Campus Ambassador for Infosys based on her performance in HackWithInfy September 2022.</p>
+                        <span class="cd-date">September 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>ICIoT-2022 held at SRM Institute of Science & Technology</h3>
+                        <p>Students: Prasad A (19BAI1061), Shruthi Srinivasan (19BAI1046), Vedang Sawarkar (19BCE1303), Saumya Bhardwaj (19BCE1067), Jaiveer Singh Rathore (19BLC1181)</p>
+                        <p>Description:</p>
+                        <p>Our students won two best paper awards in ICIoT-2022 held at SRM.</p>
+                        <span class="cd-date">September 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Rakathon 2022 Global Hackathon</h3>
+                        <p>Students: Jayit Saha (18BCE1071), Jyotika Jaiswal (19BPS1034), Arpan Ghosh (19BCE1009)</p>
+                        <p>Position: Global Winners</p>
+                        <span class="cd-date">June 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3> Binance Ideathon </h3>
+                        <p>Students: Delano Oscar Do Rosario Lourenco (20BAI1158) (Team Leader), Mehta Aaryan Urmil (20BAI1108), Kevin Gandhi (20BCE1377), M V H Sai Sriraj (20BAI1224)</p>
+                        <p>Postion: Winners, Runners and Best SPOC Award</p>
+                        <p>Description:</p>
+                        <p>Our students have been awarded  the Binance Ideathon Winners, Runners and Best SPOC Award for the project titled “PS4-Creation of a platform for local artisans to promote their products using NFT” under the guidance of Dr.V.Sakthivel.</p>
+                        <span class="cd-date">June 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Binance Ideathon</h3>
+                        <p>Students: Sinojia Meet Chandreshbhai (20BCE1234) (Team Leader),Vadgama Darshit Niravbhai (20BLC1004), Rishank Sharma (20BCE1783), Megha Nath (20BCE1581)</p>
+                        <p>Postion: Winners, Runners and Best SPOC Award</p>
+                        <p>Description:</p>
+                        <p>Our students have been awarded the Binance Ideathon Winners, Runners and Best SPOC Award for the project titled “PS6-Decentralized EV Charging Infrastructure” under the guidance of Dr.V.Sakthivel</p>
+                        <span class="cd-date">June 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Hack4Bengal 2022 Hackathon</h3>
+                        <p>Students: Pritika Kannapiran (21BAI1172), Anjali Kedia (21BAI1130), Srijena Guin (21BAI1161), Anushka Agarwal (21BAI1194) (19MIA1056)</p>
+                        <p>Position: Best Girls Team and “Top 5 Teams”</p>
+                        <p>Description:</p>
+                        <p>The students won “Best Girls Team” and “Top 5 Teams” at the Hack4Bengal 2022 hackathon. They also  received prize money and other perks from sponsors and partners. They also won an opportunity to pitch our business idea at an oﬄine event held at Kolkata. The event witnessed participation from over 1000+ teams from around the nation.</p>
+                        <span class="cd-date">8-22 April 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Second Place in a Hackathon “Innerve”</h3>
+                        <p>Students: Ayan Sadhukhan (19BCE1872), Aniket Bansal (19BCE1869), Ronit Kumar Sarkar (19BEC1236)</p>
+                        <p>Description:</p>
+                        <p>The students won the 2nd position in the Innerve 6.0 National Hackathon at Army Institute of Technology, Pune. This event witnessed participation of over 1000 teams from colleges across India.</p>
+                        <span class="cd-date">8 April 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Dare2Compete Awards 2022</h3>
+                        <p>Students: Kinshuk Dua (19BCE1048), Jayit Saha (18BCE1071)</p>
+                        <p>Position: Winners</p>
+                        <p>Description:</p>
+                        <p>Our students achieved first and second rank in Dare2Compete Awards 2022,an event of a National Prestige</p>
+                        <span class="cd-date">March 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Precision Health Challenge 2021-22</h3>
+                        <p>Students: Shourya Gupta (19BCE1704) , Ridhika Sahni (19BCE1697)</p>
+                        <p>Postion: 2nd Runner Up</p>
+                        <p>Description:</p>
+                        <p>They won the 3rd position (2nd runner up) in the Precision Health Challenge 2021-22 organised by General Electric (Ranked 38 in Fortune 500 companies). This event witnessed the participation of over 1112 competitors from colleges across India.</p>
+                        <span class="cd-date">18 March 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>4th Edition of Economic Times Campus Stars</h3>
+                        <p>Students: Ananya Sajwan (18BCE1355), Ishita Dasgupta (18BCE1351), Jayit Saha (18BCE1071), Mansi Parashar (18BCE1048), Shreya Shrivastava (18BCE1188), Utkarsh Bhardwaj (17BCE1111)</p>
+                        <p>Description:</p>
+                        <p>Over 40,000+ students from more than 2000 universities competed, from which top 87 finalists made it to the “ET Campus Stars Class of 2021” throughout the nation. Above mentioned students were among the top 0.0025 percent of the total candidates who appeared in the program.</p>
+                        <span class="cd-date">15 March 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Track Optum Stratethon 2021 Season 3 International Hackathon</h3>
+                        <p>Students: Jayit Saha (18BCE1071), Kinshuk Dua (19BCE1048)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>The students won 1st Prize in Engineering at Track Optum Stratethon 2021 Season 3 International Hackathon. The students got rewarded with prize money of $6,700 along with PPIs from Optum, part of UnitedHealth Group.</p>
+                        <p>After gruelling rounds of competing with over 17,000+ participants, the Top 12 finalist teams were shortlisted from campus rounds and wild card entries across 150+ colleges from 5 countries. The Grand Finale saw two rounds, first was presenting to the National jury from where the Top 3 teams were selected, followed by a presentation to the Global Jury post where the Winners were announced.</p>
+                        <span class="cd-date">14 February 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Researcher Discovery Platform (RDP) Competition</h3>
+                        <p>Students: Anirudh C P (20BCE1394)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>The student and the faculty member secured the ﬁrst place in the contest among 12 teams by representing VIT Chennai in the Researcher Discovery Platform contest conducted by IIT B, sponsored by Tata.</p>
+                        <span class="cd-date">14 February 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Reign Track 1</h3>
+                        <p>Students: Vaibhav Agarwal (19BCE1413), Varun Menon (19BCE1438), Gautam Sanjay Wadhwani (19BCE1209)</p>
+                        <p>Position: Runners Up</p>
+                        <p>Description:</p>
+                        <p>The students won 2nd position ( First Runner Up) in Kotak Mahindra Bank REIGN Challenge Track 1: Reimagine Banking with Conversational AI and won the prize money of INR 50,000.</p>
+                        <span class="cd-date">27 January 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Enter the Travel-Verse Hackathon</h3>
+                        <p>Students: Aravindan TR (19MIA1061), Anirudh Vasudev (19MIA1100), Lokesh L (19MIA1010), Govind Anjan (19MIA1056)</p>
+                        <p>Postion: Runners Up</p>
+                        <p>Description:</p>
+                        <p>Our students won the 3rd prize in the enter the travel-verse hackathon conducted by Airlines Reporting Company (ARC America) on the hacker earth website/platform. The competition was held in the month of November 2021 and over 1250 teams across the globe participated in the hackathon. The students have been awarded with a prize money of 500$ and an incentive of 25$ by ARC America.</p>
+                        <span class="cd-date">13 January 2022</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Manthan Hackathon 2021</h3>
+                        <p>Students: Amit Kumar (19bce1281) (Team Leader), Rishabh Singh (19bce1500), Pratham Jangra (19bce1318), Anuttam Anand (19bce1285), Dr. Gayathri R (Scope)(Team Mentor)</p>
+                        <p>Position: 1st Place</p>
+                        <span class="cd-date">20 December 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Code to Care challenge 2021</h3>
+                        <p>Students: Smridhi Verma(19BCE1550), S Deeksha (19BPS1090), Jigyasa Agarwal (19BPS1056)</p>
+                        <p>Position: Runners Up</p>
+                        <p>Description:</p>
+                        <p>Won the 2nd position (runners up) in the Philips Code to Care 2021 Challenge. This event witnessed the participation of over 1350 teams from colleges across India..</p>
+                        <span class="cd-date">1 November 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Travel-verse Hackathon</h3>
+                        <p>Students: Aravindan TR (19MIA1061), Anirudh Vasudev (19MIA1100), Lokesh L (19MIA1010), Govind Anjan (19MIA1056)</p>
+                        <p>Position: 3rd Place</p>
+                        <p>Description:</p>
+                        <p>Conducted by Airlines Reporting Company (ARC America) on the hacker earth website/platform. The students won the 3rd prize with prize money of 500$ and an incentive of 25$ by ARC America.</p>
+                        <span class="cd-date">November 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Brain Fizz</h3>
+                        <p>Students: Akash Manish Lad</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Akash Manish Lad got first prize in “Brain Fizz” an annual individual hackathon competition organized by Deen Dayal Upadhyaya College (University of Delhi)</p>
+                        <span class="cd-date">1 Nov 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Ford Cyber Security Awareness Month</h3>
+                        <p>Students: Prithvi Seshadri (19BAI1105), Abishek Mahesh (19BAI1143)</p>
+                        <p>Description:</p>
+                        <p>Students participated in Ford Cyber Security Awareness Month, call for papers - ” Role of AI/ML in cyber security” and have won the paper presentation. [The competition was conducted by FORD INDIA for the cyber security awareness month sticking to a domain of “Role of AI/ML in cyber security”. The competition had three rounds starting from the month of September, After gruelling rounds of competing with over participants from 300 colleges, the top 5 teams were selected to the Finale Event which happened on 29-10-2021</p>
+                        <span class="cd-date">29 October 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Cisco Webex Virtual Hackathon</h3>
+                        <p>Students: KG Nithesh, Jacob Jebaraj V, Sruti Verma</p>
+                        <p>Position: 2nd Place</p>
+                        <p>Description:</p>
+                        <p>KG Nithesh, Jacob Jebaraj V, Sruti Verma  got Second winner position in ” Cisco Webex Virtual Hackathon ” and each student is been gifted a Tablet worth Rs 20000/- as a prize.</p>
+                        <span class="cd-date">September 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>IBM Z DATATHON </h3>
+                        <p>Students: Ilakkiya V (19BCE1699), Vijay (19BCE1388)</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Secured 1st place in the IBM Z DATATHON (and bagged 1000USD along with mentorship from IBM Z and access to IBM Z Cloud) competition organized by Shooting Stars Foundation and IBM.</p>
+                        <span class="cd-date">30 August 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>IBM Hack Challenge 2021</h3>
+                        <p>Students: Mr. G O Narendra (19BCE1082), Ms. Vaishnavi V V (19BCE1497), Mr. Aravinda B (19BCE1190), Ms. Shalini A (19BCE1005)</p>
+                        <p>Description:</p>
+                        <p>Achieved Special Jury Award in the IBM Hack Challenge 2021</p>
+                        <span class="cd-date">July 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Sankalp Festival 2020-2021</h3>
+                        <p>Students: Arasada Ekaveera Aneel Kumar, Yenni Aditya</p>
+                        <p>Postion: 3rd Place</p>
+                        <p>Description:</p>
+                        <p>Our NSS VIT Chennai Victory at 3rd Position in Sankalp Festival 2020-2021:Here we have a set of students who have excelled in a competition held at National Level “Sankalp”, an Inter NSS unit competition that involved Presentation and Case Study rounds in Jaagriti 2021, on 12th and 17th April 2021, respectively.</p>
+                        <span class="cd-date">April 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>WAIDatathon 2021- Asia Pacific (APAC)</h3>
+                        <p>Students: Saumya Bhardwaj, Nitika Verma, Kinshuk Dua, Azam Siddiqui</p>
+                        <p>Position: 2nd Runner Up</p>
+                        <span class="cd-date">March 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>EY Techathon 2021</h3>
+                        <p>Students: Ankita Duraphe, Pranav Motarwar, Preethi Chandirasekeran, Vedant Rokde , Rudra Patil</p>
+                        <p>Position: Best Girls Team and “Top 5 Teams”</p>
+                        <p>Description:</p>
+                        <p>The student members of the team Vax India Tech team: Ankita Duraphe, Pranav Motarwar, Preethi Chandirasekeran, Vedant Rokde , Rudra Patil  got first Runner-Up in the EY Techathon 2021. This event started with 1500 teams from 600 colleges in India. The prize includes a cash award of Rs 2,00,000 and internships at EY</p>
+                        <span class="cd-date">January 2021</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>“More number of World Records in Mathematics made in Single day”</h3>
+                        <p>Students: Mr. D.Dhaxina Kumar</p>
+                        <p>Description:</p>
+                        <p>Congratulations to our B.Tech Computer Science and Engineering student Mr. D.Dhaxina Kumar from VIT University, Chennai. He has won “More number of World Records in Mathematics made in Single day” on the 24th day of August 2020 certified by CHAMPION WORLD RECORDS.</p>
+                        <span class="cd-date">24 August 2020</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>COVID '19 AR Challenge Contest</h3>
+                        <p>Students: Mr. Sainath Ganesh & Mr. Siddharth</p>
+                        <p>Position: Runner Up</p>
+                        <p>Description:</p>
+                        <p>Mr. Sainath Ganesh & Mr. Siddharth, COVID '19 AR Challenge Contest - CSIR - CEERI & Elixar Systems, Ministry of Commerce and Trade, GOI and NVIDIA — Symptom Visualizer (AR based COVID symptoms Visualisation using X-Rays)</p>
+                        <span class="cd-date">4 August 2020</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Kone IBM Hackathon</h3>
+                        <p>Students: Aman Hussain</p>
+                        <p>Description:</p>
+                        <p>Won First Place Award & Certificate of Appreciation in Kone IBM Hackathon conducted by KONE R&D Labs, Ambattur In-dustrial Estate, Chennai.</p>
+                        <span class="cd-date">24 August 2020</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Cognizant Best project award</h3>
+                        <p>Students: Kalluri Vinay Reddy (13MSE1013)</p>
+                        <span class="cd-date">4 August 2020</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Digital Dream 2019 Hackathon</h3>
+                        <p>Students: Rahat Kataria</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Rahat Kataria and his team got first prize in the Digital Dream 2019 Hackathon conducted at Kalasalingam Academy of Research and Education, they got certificates, trophy and cash prizes in reward</p>
+                        <span class="cd-date">November 2019</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Startup Eco System Development, NIC, Open Gov. Data Hack</h3>
+                        <p>Students: Swaraj Rajendra Phadtare and Dhanush Ram</p>
+                        <p>Position: National Winner - 5th Place</p>
+                        <span class="cd-date">November 2018</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>CPIHackathon</h3>
+                        <p>Students: Aryan Sisodia </p>
+                        <p>Position: Runner Up</p>
+                        <span class="cd-date">August 2018</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>TCS EngiNX 2017 (Engineering innovation contest)</h3>
+                        <p>Students: Sachin Gopal , Sanchay Gupta , Har Shobhit Dayal , Shriansh Srivastava</p>
+                        <span class="cd-date">February-August 2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Red Hat Certified Architect</h3>
+                        <p>Students: Naren Chandra Kattla</p>
+                        <span class="cd-date">2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>CERN Openlab</h3>
+                        <p>Students: Sharad Agarwal</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Secured 1st place in the CERN OpenLab held in Switzerland.</p>
+                        <span class="cd-date">2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Google Code-in summit</h3>
+                        <p>Students: Shreyans Sheth</p>
+                        <span class="cd-date">2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>WEB HACKATHON</h3>
+                        <p>Students: Rahul Bajaj (16BCE1170), Ritik Srivastava(16BCE1222)</p>
+                        <span class="cd-date">September 2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Data Science hackathon</h3>
+                        <p>Students: Saumya Suvarna</p>
+                        <p>Postion: 3rd Place</p>
+                        <p>Description:</p>
+                        <p>Won Best project award "Breast cancer detection" and “Stock price movement” in Data Science hackathon conducted by University of Texas, Dallas.</p>
+                        <span class="cd-date">April 2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>R2Robotronics Pvt. Ltd</h3>
+                        <p>Students: Prashant Kumar Bhardwaj</p>
+                        <p>Position: 1st Place</p>
+                        <p>Description:</p>
+                        <p>Won Best Innovative Tech Startup award for its scalable cloud navigation system for drones.</p>
+                        <span class="cd-date">August 2016</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>SwellIIRT Software Contest</h3>
+                        <p>Students: Fenil Patel, Prastut Kumar</p>
+                        <p>Position: 1st Place</p>
+                        <span class="cd-date">2016</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Microsoft Campus Connect, Chennai</h3>
+                        <p>Students: Nitu Sharaff (13BCE1134)</p>
+                        <p>Position: 1st prize for Website development </p>
+                        <span class="cd-date">2015</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Cognizance at IIT Roorkee</h3>
+                        <p>Students: Aditi Site and Akshay Patil</p>
+                        <p>Position: Runners Up</p>
+                        <span class="cd-date">2015</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Digital Week 2K15</h3>
+                        <p>Students: Rengaraj.S</p>
+                        <p>Description:</p>
+                        <p>Won 1st place in Poster Making organized during Digital Week 2K15 from 27th to 30th January, 2015 held at VIT Chennai.</p>
+                        <span class="cd-date">2015</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>the TECHLUNATICS</h3>
+                        <p>Students: Kishore Ram</p>
+                        <p>Position: 2nd Place</p>
+                        <p>Description:</p>
+                        <p>Won Second Prize in the TECHLUNATICS event- during technoVIT'15</p>
+                        <span class="cd-date">2015</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Microsoft Hackathon</h3>
+                        <p>Students: Rajeev Desai, Venkat Warlu </p>
+                        <p>Position: 1st Place</p>
+                        <span class="cd-date">2014</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>SeptemberEasy Contest on Hackerearth</h3>
+                        <p>Students: D Cyrus Jackson</p>
+                        <p>Position: 348th position out of 1703 Contestants</p>
+                        <span class="cd-date">2014</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>CodeChef / Competitive Algorithmic Programming</h3>
+                        <p>Students: D Cyrus Jackson</p>
+                        <p>Position: 347th position out of 1698 Contestants</p>
+                        <span class="cd-date">2014</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Codestart 2.0</h3>
+                        <p>Students: D Cyrus Jackson</p>
+                        <p>Position: 41st</p>
+                        <span class="cd-date">2014</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Codehunt Competition</h3>
+                        <p>Students: D Cyrus Jackson</p>
+                        <p>Position: 1st Place</p>
+                        <span class="cd-date">2014</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+                
+            </section>..  
+        </div>
+    </div>
+    <section class="studentAchivement">
+        <div class="headingStudent">
+            <h1>Achievements Of Faculties</h1>
+        </div>
+    </section>  
+    <div class="rt-container">
+        <div class="col-rt-12">
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/open-book.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Best Indian Golden Personalities Award</h3>
+                        <p>Faculty: Dr S. Geetha</p>
+                        <p>Description:</p>
+                        <p>Dr S. Geetha has won the Best Indian Golden Personalities award from Friendship Forum, 2019
+                        </p>
+                        <span class="cd-date">2019</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/open-book.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Leading Educationist of India</h3>
+                        <p>Faculty: Dr S. Geetha</p>
+                        <p>Description:</p>
+                        <p>Dr S. Geetha has won Leading Educationist of India award from Friendship Forum, 2019.
+                        </p>
+                        <span class="cd-date">2019</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Bharat Excellence award</h3>
+                        <p>Faculty: Dr S. Geetha</p>
+                        <p>Description:</p>
+                        <p>Dr S. Geetha has won Bharat Excellence award from Friendship Forum, 2019
+                        </p>
+                        <span class="cd-date">2019</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/open-book.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>appointed as Convener</h3>
+                        <p>Faculty: Dr S. Geetha</p>
+                        <p>Description:</p>
+                        <p>Dr S. Geetha has been appointed as Convener, Institution's Innovation Council, MHRD, Govt. of India, 2018-19.
+                        </p>
+                        <span class="cd-date">2019</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/open-book.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>appointed as ACM Distinguished Speaker</h3>
+                        <p>Faculty: Dr T. S. Pradeepkumar</p>
+                        <p>Description:</p>
+                        <p>Dr T. S. Pradeepkumar has been appointed as ACM Distinguished Speaker,2018
+                        </p>
+                        <span class="cd-date">2018</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-sports">
+                        <img src="./Images/lightbulb.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3> Outstanding Faculty award</h3>
+                        <p>Faculty: Dr G Malathi</p>
+                        <p>Description:</p>
+                        <p>Dr G Malathi received Outstanding Faculty award in Venus International Faculty Awards,2018.</p>
+                        <span class="cd-date">2018</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-light">
+                        <img src="./Images/coding.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>CODS Data Challenge Winner</h3>
+                        <p>Faculty: Dr R. Rajalakshmi</p>
+                        <p>Description:</p>
+                        <p>Dr R. Rajalakshmi received CODS Data Challenge Winner from Indian Institute of Technology, Madras, 2017</p>
+                        <span class="cd-date">2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-code">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Best Paper Award</h3>
+                        <p>Faculty: Dr V. Pattabiraman and Dr. S. Harinii</p>
+                        <p>Description:</p>
+                        <p>Dr V. Pattabiraman and Dr. S. Harini received Best Paper Award with Euro 150 e-Cash Voucher in the International Conference on Computational Sciences, Advanced Database and Computing (CSADC2017) held at Phuket, Thailand, 2017.</p>
+                        <span class="cd-date">2017</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img cd-idea">
+                        <img src="./Images/analysis.svg" alt="Idea">
+                    </div> <!-- cd-timeline-img -->
+
+                    <div class="cd-timeline-content">
+                        <h3>Best Poster Award</h3>
+                        <p>Faculty: Dr B. Rajesh Kanna</p>
+                        <p>Description:</p>
+                        <p>Dr B. Rajesh Kanna received Best Poster Award at 22nd International ACM Symposium on High-Performance Parallel and Distributed Computing(HPDC2013), New York, 2013.</p>
+                        <span class="cd-date">2013</span>
+                    </div> <!-- cd-timeline-content -->
+                </div> <!-- cd-timeline-block -->
+            </section>
+        </div>
+    </div>
+    <script src="navigation.js"></script>
+    <script src="revealOnScroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="animatedText.js"></script>
+    <script src="scrollBack.js"></script>
+</body>
+</html>
