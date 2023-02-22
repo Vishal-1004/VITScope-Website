@@ -143,6 +143,9 @@ DESIGNING NAVIGATION BAR
 }
   
 @media screen and (max-width: 950px) {
+    .secondPart a{
+    margin: 10px 2px;
+}
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
       position: absolute;
