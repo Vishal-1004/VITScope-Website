@@ -1,0 +1,217 @@
+.row{
+    padding: 2rem 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 22%;
+    text-align: center;
+    color: #555;
+}
+
+.counter-box{
+    background: white;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.counter-box h2,.counter-box span{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+}
+
+.counter-box i{
+    font-size: 40px;
+    color: #009688;
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .counter-box h2,.counter-box span{
+        display: inline-block;
+        margin: 15px 0;
+        font-size: 40px;
+        font-weight: 400;
+        color: #000;
+    }
+    
+}
+
+/************************************************************************
+        PLACEMENT STATS
+************************************************************************/
+.placementStats{
+    padding: 2rem 12% 4rem 12%;
+    background-color: rgba(255, 228, 196,0.5);
+}
+
+.placementStats .placementHeading h1{
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.companiesVisited{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.visitedChart{
+    width: 400px;
+    height: 400px;
+}
+
+.visitedtext{
+    width: 400px;
+    height: 300px;
+    padding-left: 10px;
+}
+
+.visitedtext h2{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.placementStats .reveal{
+    transform: translateY(100px);
+    position: relative;
+    opacity: 0;
+    transition: all ease 2s;
+}
+
+.companiesVisited.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px){
+    .placementStats .placementHeading h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    
+
+    .placementStats .companiesVisited{
+        flex-direction: column;
+    }
+
+    .visitedChart{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .visitedtext{
+        width: 350px;
+        height: 280px;
+    }
+    
+}
+
+.toprecruiters{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recruitersCharts{
+    width: 400px;
+    height: 400px;
+}
+
+.recruitersText{
+    width: 400px;
+    height: 300px;
+}
+
+.recruitersText h2{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.recruitersText p{
+    font-weight: 380;
+}
+
+.toprecruiters.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media screen and (max-width: 900px){
+
+    .placementStats .toprecruiters{
+        flex-direction: column-reverse;
+    }
+
+    .recruitersCharts{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .recruitersText{
+        width: 350px;
+        height: 280px;
+    }
+    
+}
+
+.studentsPlaced{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.placedChart{
+    width: 400px;
+    height: 400px;
+}
+
+.placedText{
+    width: 400px;
+    height: 300px;
+}
+
+.placedText h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 900px){
+    .studentsPlaced{
+        flex-direction: column;
+    }
+
+    .placedChart{
+        width: 350px;
+        height: 350px;
+    }
+
+    .placedText{
+        width: 350px;
+        height: 280px;
+    }
+}
+
+.studentsPlaced.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/****************************************************************
+        DONE TILL NOW
+****************************************************************/

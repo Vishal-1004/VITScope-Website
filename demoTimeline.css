@@ -1,0 +1,129 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background:#e3fafb none repeat scroll 0 0;
+  color: #222;
+  margin: 0;
+	padding:0;
+
+}
+
+#float-right{
+	float:right;	
+}
+
+/* ******************************************************
+	Header
+*********************************************************/
+/* Header*/
+.ScriptHeader {
+    float: left;
+    width: 100%;
+    padding: 2rem 12%;
+}
+.rt-heading {
+    border-bottom: solid 1px #03797d;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+.ScriptHeader h1{
+    color: #03797d;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    line-height: normal;
+}
+
+/* ******************************************************
+	Live Demo
+*********************************************************/
+
+
+/* ******************************************************
+	Responsive Grids
+*********************************************************/
+
+.rt-container {
+  margin: 0 auto;
+}
+
+.rt-row:before, .rt-row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.rt-row:after {
+  clear: both;
+}
+[class^="col-rt-"] {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0 15px;
+  min-height: 1px;
+  position: relative;
+}
+
+
+@media (min-width: 768px) {
+  .rt-container {
+    width: 750px;
+  }
+  [class^="col-rt-"] {
+    float: left;
+    width: 49.9999999999%;
+  }
+  .col-rt-6, .col-rt-12 {
+    width: 100%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+	.rt-container {
+		width: 1170px;
+	}
+	.col-rt-1 {
+		width:16.6%;
+	}
+	.col-rt-2 {
+		width:30.33%;
+	}
+	.col-rt-3 {
+		width:50%;
+	}
+	.col-rt-4 {
+		width: 67.664%;
+	}
+	.col-rt-5 {
+		width: 83.33%;
+	}
+	
+
+}
+
+@media only screen and (min-width:240px) and (max-width: 768px){
+	 
+	.ScriptHeader h1,
+	.ScriptHeader h2, 
+	.scriptnav ul{
+		text-align:center;	
+	}
+	.scriptnav ul{
+		 margin-top:12px;		
+	}
+	#float-right{
+		float:none;	
+	}
+	
+}
